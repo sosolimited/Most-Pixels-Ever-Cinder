@@ -261,8 +261,8 @@ namespace mpe
         {
             if (mIsScissorEnabled)
             {
-                glEnable(GL_SCISSOR_TEST);
-                glScissor(0, 0,
+				gl::enable( GL_SCISSOR_TEST );
+				gl::scissor( 0, 0,
                           mLocalViewportRect.getWidth(),
                           mLocalViewportRect.getHeight());
             }
